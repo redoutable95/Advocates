@@ -9,5 +9,3 @@ toggle.addEventListener("click", () => {
   headerBtn.classList.toggle("active");
   body.classList.toggle("active");
 });
-
-console.log("gesf");

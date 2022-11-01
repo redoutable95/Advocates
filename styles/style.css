@@ -1,4 +1,4 @@
-@import url(./reboot.css);
+/* @import url(./reboot.css); */
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,500&family=Montserrat:wght@400;500;600;700&display=swap');
 
@@ -15,6 +15,7 @@ body {
     font-size: 16px;
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
 }
 
 body.active {
@@ -61,6 +62,10 @@ body.active {
 }
 
 .header {
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
     min-height: 80px;
     min-width: 100%;
     background-color: var(--bg-color);
@@ -93,19 +98,20 @@ body.active {
 
 .header__button {
 
-    transform: translateY(-1000px);
+    transform: translateX(-100vw);
     transition: transform 0.2s ease-in;
     position: absolute;
 
 }
 
 .header__button.active {
-    transform: translateY(0);
-    width: auto;
-    position: absolute;
-    top: 14px;
-    left: 20px;
-    z-index: 1001;
+        transform: translateX(0);
+        width: auto;
+        position: absolute;
+        top: 14px;
+        left: 20px;
+        z-index: 1001;
+        
 }
 
 .burger-toggle {
@@ -171,15 +177,15 @@ body.active {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     background-color: var(--bg-color);
     font-size: 24px;
     padding: 100px 20px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    transform: translateY(-10000px);
-    transition: transform 0.15s ease-in;
+    transform: translateX(-100vw);
+    transition: transform 0.2s ease-in;
     z-index: 100;
 }
 
@@ -222,13 +228,14 @@ body.active {
 
 .promo {
     width: 100%;
-    height: calc(100vh - 80px);
-    background-image: url(../img/promo-bg.jpg);
+    height: calc(60vh - 80px);
+    position: relative;
+    background-image: url(../img/promo-bg-sm@2.jpg);
+    background-image: -webkit-image-set(url("../img/promo-bg-sm.webp") 1x, url("../img/promo-bg-sm.jpg") 1x, url("../img/promo-bg-sm@2.webp") 2x, url("../img/promo-bg-sm@2.jpg") 2x);
+    background-image: image-set(url("../img/promo-bg-sm.webp") 1x, url("../img/promo-bg-sm.jpg") 1x, url("../img/promo-bg-sm@2.webp") 2x, url("../img/promo-bg-sm@2.jpg") 2x);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    background-attachment: fixed;
 }
 
 .promo::before {
@@ -236,8 +243,11 @@ body.active {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: black;
-    opacity: 0.3;
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
 }
 
 .promo__content {
@@ -247,9 +257,9 @@ body.active {
 
 .promo__title {
     color: #ffffff;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 42px;
     max-width: 265px;
     margin-top: auto;
 }
@@ -258,12 +268,13 @@ body.active {
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 24px;
     max-width: 520px;
     margin-bottom: 60px;
 }
 
 .arrow-down {
+    display: none;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -333,10 +344,11 @@ body.active {
 .slogan {
     padding: 80px 0;
     text-align: center;
-    background-image: url(../img/section-bg.jpg);
+    background-image: url(../img/slogan-bg.jpg);
+    background-image: -webkit-image-set(url("../img/slogan-bg.webp") 1x, url("../img/slogan-bg.jpg") 1x);
+    background-image: image-set(url("../img/slogan-bg.webp") 1x, url("../img/slogan-bg.jpg") 1x);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     color: #ffffff;
     position: relative;
 }
@@ -348,8 +360,11 @@ body.active {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #2C3135;
-    opacity: 0.4;
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
     z-index: 1;
 }
 
@@ -405,6 +420,8 @@ body.active {
     list-style: none;
     padding: 25px 15px;
     background-image: url(../img/services-bg-1.jpg);
+    background-image: -webkit-image-set(url("../img/services-bg-1.webp") 1x, url("../img/services-bg-1.jpg") 1x);
+    background-image: image-set(url("../img/services-bg-1.webp") 1x, url("../img/services-bg-1.jpg") 1x);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -426,10 +443,14 @@ body.active {
 
 .services-list__item:nth-child(2) {
     background-image: url(../img/services-bg-2.jpg);
+    background-image: -webkit-image-set(url("../img/services-bg-2.webp") 1x, url("../img/services-bg-2.jpg") 1x);
+    background-image: image-set(url("../img/services-bg-2.webp") 1x, url("../img/services-bg-2.jpg") 1x);
 }
 
 .services-list__item:nth-child(3) {
     background-image: url(../img/services-bg-3.jpg);
+    background-image: -webkit-image-set(url("../img/services-bg-3.webp") 1x, url("../img/services-bg-3.jpg") 1x);
+    background-image: image-set(url("../img/services-bg-3.webp") 1x, url("../img/services-bg-3.jpg") 1x);
 }
 
 .services-list__title {
@@ -471,10 +492,8 @@ body.active {
     padding: 80px 0;
     background-color: var(--bg-color);
     color: #ffffff;
-    background-image: url(../img/section-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     position: relative;
 }
 
@@ -651,11 +670,17 @@ body.active {
     }
 
     .header__button {
-        transform: translateY(0);
+        transform: translateX(0);
         position: static;
         width: auto;
+        transition: position 0.2s ease-in;
     }
+    .promo {
+        background-image: url(../img/promo-bg.jpg);
+        background-image: -webkit-image-set(url("../img/promo-bg.webp") 1x, url("../img/promo-bg.jpg") 1x, url("../img/promo-bg.webp") 2x, url("../img/promo-bg-sm@2.jpg") 2x);
+        background-image: image-set(url("../img/promo-bg.webp") 1x, url("../img/promo-bg.jpg") 1x, url("../img/promo-bg.webp") 2x, url("../img/promo-bg-sm@2.jpg") 2x);
 
+    }
     .personal__image {
         width: 480px;
         height: 560px;
@@ -702,7 +727,8 @@ body.active {
 
     .menu {
         position: static;
-        transform: translateY(0);
+        transform: translateX(0);
+        min-height: auto;
         width: auto;
         margin: 0;
         margin-left: 50px;
@@ -722,9 +748,34 @@ body.active {
         font-size: 18px;
     }
 
+    .promo {
+        height: calc(100vh - 80px);
+        background-attachment: fixed;
+    }
+    .promo__title {
+        color: #ffffff;
+        font-size: 48px;
+        line-height: 60px;
+
+    }
+   
     .promo__decscription {
         font-size: 28px;
+        line-height: 40px;
         margin-bottom: 80px;
+    }
+    .arrow-down {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: arrow 2s infinite ease-in-out;
+    }
+    .slogan {
+        background-attachment: fixed;
     }
 
     .arrow-down {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reboot.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Адвокат в Грозном</title>
   </head>
@@ -17,14 +18,16 @@
               <a href="#" class="menu__link">Главная</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Юристы</a>
-            </li>
-            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Услуги</a>
+              <a href="#personal" class="menu__link">Юристы</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
+              <a href="#slogan" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#services" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts" class="menu__link">Контакты</a>
             </li>
           </ul>
           <a class="header__button button" href="tel:+79287777777"
@@ -74,17 +77,34 @@
           </div>
         </div>
       </section>
-      <section class="personal">
+      <section class="personal" id="personal">
         <h2 class="personal__title visually-hidden">Наши сотрудники</h2>
         <div class="container">
           <div class="personal__items">
             <div class="personal__item">
-              <img
-                class="personal__image"
-                src="./img/person1.JPG"
-                width="280"
-                height="320"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 576px)"
+                  srcset="./img/person1xl.webp 1x, ./img/person1xl@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="./img/person1sm.webp 1x, ./img/person1sm@2.webp 2x"
+                />
+
+                <source
+                  media="(min-width: 576px)"
+                  srcset="./img/person1xl.jpg 1x, ./img/person1xl@2.jpg 2x"
+                />
+                <img
+                  class="personal__image"
+                  src="./img/person1sm.jpg  1x,"
+                  srcset="./img/person1sm@2.jpg 2x"
+                  alt="Нухаев Муслим"
+                />
+              </picture>
+
               <div class="personal__info">
                 <h3 class="personal__name">Нухаев Муслим</h3>
                 <p class="personal__position">Адвокат</p>
@@ -103,12 +123,29 @@
               </p>
             </div>
             <div class="personal__item">
-              <img
-                class="personal__image"
-                src="./img/person2.JPG"
-                width="280"
-                height="320"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 576px)"
+                  srcset="./img/person2xl.webp 1x, ./img/person2xl@2.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="./img/person2sm.webp 1x, ./img/person2sm@2.webp 2x"
+                />
+
+                <source
+                  media="(min-width: 576px)"
+                  srcset="./img/person2xl.jpg 1x, ./img/person2xl@2.jpg 2x"
+                />
+                <img
+                  class="personal__image"
+                  src="./img/person2sm.jpg  1x,"
+                  srcset="./img/person2sm@2.jpg 2x"
+                  alt="Исмаилов Мехди"
+                />
+              </picture>
+
               <div class="personal__info">
                 <h3 class="personal__name">Исмаилов Мехди</h3>
                 <p class="personal__position">Специалист по недвижимости</p>
@@ -127,7 +164,7 @@
           </div>
         </div>
       </section>
-      <section class="slogan">
+      <section class="slogan" id="slogan">
         <div class="slogan__content container">
           <h2 class="slogan__title">МЫ ЦЕНИМ СПРАВЕДЛИВОСТЬ И ВАШЕ ВРЕМЯ</h2>
           <p class="slogan__text">
@@ -139,8 +176,7 @@
           </p>
         </div>
       </section>
-      <!-- <section class="about"></section> -->
-      <section class="services container">
+      <section class="services container" id="services">
         <h2 class="services__title">Услуги</h2>
         <ul class="services__list services-list">
           <li class="services-list__item">
@@ -285,7 +321,7 @@
         </div>
       </section>
 
-      <section class="contacts container">
+      <section class="contacts container" id="contacts">
         <div class="contacts__content">
           <p class="contacts__number">+7 812 200 98 71</p>
           <p class="contacts__email">mail@lpractice.ru</p>
@@ -295,11 +331,13 @@
           </p>
         </div>
         <div class="form-wrapper">
-          <form class="form" action="#">
-            <input type="text" placeholder="Имя" />
-            <input type="tel" placeholder="Телефон" />
-            <input type="email" placeholder="Email" />
-            <button type="submit" class="button">Отправить</button>
+          <form class="form" method="post" action="/send.php">
+            <input type="text" placeholder="Имя" name="user-name" />
+            <input type="tel" placeholder="Телефон" name="user-phone" />
+            <input type="email" placeholder="Email" name="user-email" />
+            <button type="submit" class="button" value="Отправить">
+              Отправить
+            </button>
           </form>
         </div>
       </section>
