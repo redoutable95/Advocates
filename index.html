@@ -18,7 +18,7 @@
               <a href="#" class="menu__link">Главная</a>
             </li>
             <li class="menu__item">
-              <a href="#personal" class="menu__link">Юристы</a>
+              <a href="#personal" class="menu__link">Партнеры</a>
             </li>
             <li class="menu__item">
               <a href="#slogan" class="menu__link">О нас</a>
@@ -30,8 +30,8 @@
               <a href="#contacts" class="menu__link">Контакты</a>
             </li>
           </ul>
-          <a class="header__button button" href="tel:+79287777777"
-            >+7 928 777 77 77</a
+          <a class="header__button button" href="tel:+79640638820"
+            >+7 (964) 063 88 20</a
           >
           <div class="burger-toggle">
             <span></span>
@@ -43,11 +43,24 @@
       <section class="promo">
         <div class="container">
           <div class="promo__content">
-            <h1 class="promo__title">Адвокат в Грозном</h1>
-            <p class="promo__decscription">
-              Квалифицированная юридическая помощь по уголовным и гражданским
-              делам
-            </p>
+            <div class="promo__content-wrapper">
+              <div class="promo__slide active">
+                <h1 class="promo__title">Адвокат в Грозном</h1>
+                <p class="promo__decscription">
+                  Квалифицированная юридическая помощь<br />
+                  по уголовным и гражданским делам
+                </p>
+              </div>
+              <div class="promo__slide">
+                <p class="promo__text">
+                  На нашем сайте вы найдете только краткую информацию о
+                  портнерах и средствах связи с нами. Мы не перечисляем
+                  выигранные дела, не даем себе оценок и не публикуем отзывы
+                  третьих лиц о нашей работе — такая реклама прямо запрещена
+                  пунктом 1 статьи 17 Кодекса профессиональной этики адвоката.
+                </p>
+              </div>
+            </div>
           </div>
           <div>
             <svg
@@ -106,20 +119,30 @@
               </picture>
 
               <div class="personal__info">
-                <h3 class="personal__name">Нухаев Муслим</h3>
+                <h3 class="personal__name">
+                  Нухаев <br />
+                  Муслим Майрбекович
+                </h3>
                 <p class="personal__position">Адвокат</p>
               </div>
             </div>
             <div class="personal__item">
               <p class="personal__text">
-                Я осуществляю свою деятельность в Москве и Грозном. Однако при
-                необходимости выезжаю и в другие города РФ. Являюсь специалистом
-                уголовно-правовой практики. Работаю в сфере преступлений против
-                личности, против собственности, против государственной службы и
-                по иным квалификациям, предусмотренным Уголовным кодексом РФ.
-                Также имею богатый опыт в области цивилистики, что позволяет
-                успешно оказывать юридическую помощь по гражданским делам в
-                судах общей юрисдикции и в арбитражных судах.
+                <span
+                  >Я осуществляю свою деятельность в Москве и Грозном. Однако
+                  при необходимости выезжаю и в другие города РФ.</span
+                >
+                <span
+                  >Являюсь специалистом уголовно-правовой практики. Работаю в
+                  сфере преступлений против личности, против собственности,
+                  против государственной службы и по иным квалификациям,
+                  предусмотренным Уголовным кодексом РФ.</span
+                >
+                <span>
+                  Также имею богатый опыт в области цивилистики, что позволяет
+                  успешно оказывать юридическую помощь по гражданским делам в
+                  судах общей юрисдикции и в арбитражных судах.
+                </span>
               </p>
             </div>
             <div class="personal__item">
@@ -147,124 +170,141 @@
               </picture>
 
               <div class="personal__info">
-                <h3 class="personal__name">Исмаилов Мехди</h3>
-                <p class="personal__position">Специалист по недвижимости</p>
+                <h3 class="personal__name">
+                  Исраилов <br />
+                  Мехди Сайд-Альвиевич
+                </h3>
+                <p class="personal__position">Юрист в области недвижимости</p>
               </div>
             </div>
             <div class="personal__item">
               <p class="personal__text">
-                Мой основной профиль – юрист в сфере недвижимости Работаю в
-                сфере недвижимости более 3 лет, В более 700 сделках с
-                недвижимостью оказал юридическую помощь клиентам, из которых 70
-                % работают на постоянной основе. Являлся руководителем
-                юридического отдела АН «Этажи» в г. Грозный являющегося
-                агентством №1 по версии «Сбербанка».
+                <span>
+                  Мой основной профиль – юрист в сфере недвижимости. Работаю в
+                  сфере недвижимости более 3-x лет.</span
+                >
+                <span>
+                  В более 700 сделках с недвижимостью оказал юридическую помощь
+                  клиентам, из которых 70 % работают на постоянной основе.
+                </span>
+                <span>
+                  Являлся руководителем юридического отдела АН «Этажи» в г.
+                  Грозном являющимся агентством №1 по версии «Сбербанка».</span
+                >
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="slogan" id="slogan">
+      <!-- <section class="slogan" id="slogan">
         <div class="slogan__content container">
           <h2 class="slogan__title">МЫ ЦЕНИМ СПРАВЕДЛИВОСТЬ И ВАШЕ ВРЕМЯ</h2>
           <p class="slogan__text">
-            На нашем сайте вы найдете только краткую информацию о бюро и
+            На нашем сайте вы найдете только краткую информацию о портнерах и
             средствах связи с нами. Мы не перечисляем выигранные дела, не даем
             себе оценок и не публикуем отзывы третьих лиц о нашей работе — такая
             реклама прямо запрещена пунктом 1 статьи 17 Кодекса профессиональной
             этики адвоката.
           </p>
         </div>
-      </section>
-      <section class="services container" id="services">
-        <h2 class="services__title">Услуги</h2>
-        <ul class="services__list services-list">
-          <li class="services-list__item">
-            <h3 class="services-list__title">
-              Адвокат<br />
-              по уголовным делам
-            </h3>
-            <ul class="services-list__sub-list sub-list">
-              <li class="sub-list__item">Участие в доследственной проверке</li>
-              <li class="sub-list__item">
-                Защита в ходе предварительного следствия
-              </li>
-              <li class="sub-list__item">Защита в суде</li>
-              <li class="sub-list__item">
-                Обжалование приговоров и других судебных актов
-              </li>
-              <li class="sub-list__item">
-                Обжалование действий должностных лиц
-              </li>
-              <li class="sub-list__item">
-                Разрешение вопросов связанных с исполнением приговоров
-              </li>
-              <li class="sub-list__item">
-                Выезд в СИЗО/места лишения свободы для консультации
-              </li>
-              <li class="sub-list__item">
-                Участие в качестве представителя свидетеля или потерпевшего по
-                уголовному делу
-              </li>
-              <li class="sub-list__item">Иные вопросы</li>
-            </ul>
-          </li>
+      </section> -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="services__title">Услуги:</h2>
+          <ul class="services__list services-list">
+            <li class="services-list__item">
+              <h3 class="services-list__title">
+                Адвокат<br />
+                по уголовным делам
+              </h3>
+              <ul class="services-list__sub-list sub-list">
+                <li class="sub-list__item">
+                  Участие в доследственной проверке
+                </li>
+                <li class="sub-list__item">
+                  Защита в ходе предварительного следствия
+                </li>
+                <li class="sub-list__item">Защита в суде</li>
+                <li class="sub-list__item">
+                  Обжалование приговоров и других судебных актов
+                </li>
+                <li class="sub-list__item">
+                  Обжалование действий должностных лиц
+                </li>
+                <li class="sub-list__item">
+                  Разрешение вопросов связанных с исполнением приговоров
+                </li>
+                <li class="sub-list__item">
+                  Выезд в СИЗО/места лишения свободы для консультации
+                </li>
+                <li class="sub-list__item">
+                  Участие в качестве представителя свидетеля или потерпевшего по
+                  уголовному делу
+                </li>
+                <li class="sub-list__item">Иные вопросы</li>
+              </ul>
+            </li>
 
-          <li class="services-list__item">
-            <h3 class="services-list__title">
-              Адвокат<br />
-              для бизнеса
-            </h3>
-            <ul class="services-list__sub-list sub-list">
-              <li class="sub-list__item">Споры с государственными органами</li>
-              <li class="sub-list__item">
-                Оспаривание наложенных административных штрафов
-              </li>
-              <li class="sub-list__item">Подготовка претензий</li>
-              <li class="sub-list__item">
-                Представление интересов в арбитражных судах и судах общей
-                юрисдикции
-              </li>
-              <li class="sub-list__item">Банкротство</li>
-              <li class="sub-list__item">
-                Юридическое сопровождение предприятий
-              </li>
-              <li class="sub-list__item">Взыскание задолженности;</li>
-              <li class="sub-list__item">Взыскание неустойки/пени/процентов</li>
-              <li class="sub-list__item">
-                Споры, возникающие из договорных отношений v
-              </li>
-              <li class="sub-list__item">Иные вопросы</li>
-            </ul>
-          </li>
+            <li class="services-list__item">
+              <h3 class="services-list__title">
+                Адвокат<br />
+                для бизнеса
+              </h3>
+              <ul class="services-list__sub-list sub-list">
+                <li class="sub-list__item">
+                  Споры с государственными органами
+                </li>
+                <li class="sub-list__item">
+                  Оспаривание наложенных административных штрафов
+                </li>
+                <li class="sub-list__item">Подготовка претензий</li>
+                <li class="sub-list__item">
+                  Представление интересов в арбитражных судах и судах общей
+                  юрисдикции
+                </li>
+                <li class="sub-list__item">Банкротство</li>
+                <li class="sub-list__item">
+                  Юридическое сопровождение предприятий
+                </li>
+                <li class="sub-list__item">Взыскание задолженности;</li>
+                <li class="sub-list__item">
+                  Взыскание неустойки/пени/процентов
+                </li>
+                <li class="sub-list__item">
+                  Споры, возникающие из договорных отношений v
+                </li>
+                <li class="sub-list__item">Иные вопросы</li>
+              </ul>
+            </li>
 
-          <li class="services-list__item">
-            <h3 class="services-list__title">
-              Адвокат<br />
-              по гражданским делам
-            </h3>
-            <ul class="services-list__sub-list sub-list">
-              <li class="sub-list__item">Семейные споры;</li>
-              <li class="sub-list__item">Административные дела;</li>
-              <li class="sub-list__item">Наследственные дела;</li>
-              <li class="sub-list__item">Трудовые споры;</li>
-              <li class="sub-list__item">
-                Установление права собственности на различные объекты;
-              </li>
-              <li class="sub-list__item">Взыскание задолженности;</li>
-              <li class="sub-list__item">Споры по ДТП, ОСАГО и КАСКО;</li>
-              <li class="sub-list__item">
-                Взыскание ущерба причиненного затоплением, пожаром, иными
-                умышленными и неумышленными действиями;
-              </li>
-              <li class="sub-list__item">
-                Взыскание ущерба, причиненного некачественными медицинскими и
-                другими услугам
-              </li>
-              <li class="sub-list__item">Иные вопросы</li>
-            </ul>
-          </li>
-        </ul>
+            <li class="services-list__item">
+              <h3 class="services-list__title">
+                Адвокат<br />
+                по гражданским делам
+              </h3>
+              <ul class="services-list__sub-list sub-list">
+                <li class="sub-list__item">Семейные споры;</li>
+                <li class="sub-list__item">Административные дела;</li>
+                <li class="sub-list__item">Наследственные дела;</li>
+                <li class="sub-list__item">Трудовые споры;</li>
+                <li class="sub-list__item">
+                  Установление права собственности на различные объекты;
+                </li>
+                <li class="sub-list__item">Взыскание задолженности;</li>
+                <li class="sub-list__item">Споры по ДТП, ОСАГО и КАСКО;</li>
+                <li class="sub-list__item">
+                  Взыскание ущерба причиненного затоплением, пожаром, иными
+                  умышленными и неумышленными действиями;
+                </li>
+                <li class="sub-list__item">
+                  Взыскание ущерба, причиненного некачественными медицинскими и
+                  другими услугам
+                </li>
+                <li class="sub-list__item">Иные вопросы</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="process bg-cover">
@@ -323,19 +363,28 @@
 
       <section class="contacts container" id="contacts">
         <div class="contacts__content">
-          <p class="contacts__number">+7 812 200 98 71</p>
-          <p class="contacts__email">mail@lpractice.ru</p>
-          <p class="contacts__address">
-            Офис № 105 Бизнес-центр «Ponomarev Center» Малая Морская улица, д.
-            18, Санкт-Петербург Российская Федерация, 190000
-          </p>
+          <p class="contacts__number">+7 (926) 035 95 95</p>
+          <p class="contacts__number">+7 (964) 063-88-20</p>
+          <p class="contacts__email">m0953535m@gmail.com</p>
         </div>
         <div class="form-wrapper">
-          <form class="form" method="post" action="/send.php">
-            <input type="text" placeholder="Имя" name="user-name" />
-            <input type="tel" placeholder="Телефон" name="user-phone" />
+          <form class="form" id="form" method="post" action="/send.php">
+            <input type="text" placeholder="Имя" name="user-name" data-name />
+            <input
+              type="tel"
+              placeholder="Телефон"
+              name="user-phone"
+              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+              maxlength="18"
+              data-tel
+            />
             <input type="email" placeholder="Email" name="user-email" />
-            <button type="submit" class="button" value="Отправить">
+            <button
+              type="submit"
+              id="submit-btn"
+              class="button"
+              value="Отправить"
+            >
               Отправить
             </button>
           </form>
@@ -351,7 +400,7 @@
               <a href="#" class="menu__link">Главная</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Юристы</a>
+              <a href="#" class="menu__link">Партнеры</a>
             </li>
             <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
             <li class="menu__item">
