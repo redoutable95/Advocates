@@ -1,21 +1,20 @@
 const menu = document.querySelector(".header__menu");
 const toggle = document.querySelector(".burger-toggle");
-const headerBtn = document.querySelector(".header__button");
+const headerLogo = document.querySelector(".header__logo");
 const promoSlides = document.querySelectorAll(".promo__slide");
 const submitBtn = document.querySelector("#submit-btn");
 const form = document.querySelector("#form");
 toggle.addEventListener("click", () => {
   menu.classList.toggle("active");
   toggle.classList.toggle("active");
-  headerBtn.classList.toggle("active");
+  headerLogo.classList.toggle("active");
 });
 
 for (let item of menu.children) {
   item.addEventListener("click", () => {
     menu.classList.toggle("active");
     toggle.classList.toggle("active");
-    headerBtn.classList.toggle("active");
-    body.classList.toggle("active");
+    headerLogo.classList.toggle("active");
   });
 }
 
