@@ -94,6 +94,7 @@ body.active {
     padding-left: 0;
     transition: transform 0.2s ease-in;
 }
+
 .header__logo.active {
     left: 50%;
     transform: translateX(-50%);
@@ -101,6 +102,7 @@ body.active {
     z-index: 1001;
 
 }
+
 .logo:hover {
     color: #ffffff
 }
@@ -247,31 +249,37 @@ body.active {
     background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
     background-image: linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40));
 }
+
 .promo__content {
     position: relative;
     height: 100%;
     color: #ffffff;
     display: flex;
 }
+
 .promo__content-wrapper {
     margin-top: auto;
     margin-bottom: 80px;
 }
+
 .promo__title {
     font-size: 48px;
     font-weight: 600;
 
 }
+
 .promo__decscription {
     font-size: 24px;
     margin-bottom: 0;
 
 }
+
 .promo__text {
     text-align: center;
     font-size: 20px;
     line-height: 28px;
 }
+
 .promo__slide {
     position: absolute;
     opacity: 0;
@@ -280,6 +288,7 @@ body.active {
     left: 0;
     transition: opacity 1s ease;
 }
+
 .promo__slide.active {
     opacity: 1;
 }
@@ -324,7 +333,7 @@ body.active {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    
+
 }
 
 .personal {
@@ -360,11 +369,11 @@ body.active {
 .personal__text span {
     display: block;
     margin-bottom: 5px;
-    
+
 }
 
 .personal__image {
-    width:  calc(100vw - 30px);
+    width: calc(100vw - 30px);
     object-fit: cover;
 }
 
@@ -482,7 +491,7 @@ body.active {
     padding: 25px 15px;
     background-color: #e9e9e9;
     color: #000000;
- 
+
 }
 
 
@@ -697,17 +706,19 @@ body.active {
     .container {
         max-width: 540px;
     }
+
     .header__logo {
         transform: translateX(0);
         position: static;
         width: auto;
         margin-left: auto;
     }
+
     .header__logo.active {
         transform: translateX(0);
         position: static;
         width: auto;
-    
+
     }
 
     .promo {
@@ -716,13 +727,16 @@ body.active {
         background-image: image-set(url("../img/promo-bg.webp") 1x, url("../img/promo-bg.jpg") 1x, url("../img/promo-bg.webp") 2x, url("../img/promo-bg-sm@2.jpg") 2x);
 
     }
+
     .promo__title {
         font-size: 56px;
     }
+
     .promo__decscription {
         font-size: 32px;
-    
+
     }
+
     .promo__text {
         font-size: 32px;
         line-height: 40px;
@@ -732,6 +746,7 @@ body.active {
         width: 480px;
         height: 560px;
     }
+
     .personal__text {
         max-width: 480px;
     }
@@ -743,7 +758,7 @@ body.active {
         max-width: 720px;
 
     }
-    
+
     .arrow-down {
         animation: arrow 2s infinite ease-in-out;
     }
@@ -807,21 +822,24 @@ body.active {
     }
 
     .promo {
-        height:100vh;
+        height: 100vh;
         background-attachment: fixed;
     }
 
     .promo__title {
         font-size: 64px;
     }
+
     .promo__decscription {
         font-size: 40px;
-    
+
     }
+
     .promo__text {
         font-size: 40px;
         line-height: 48px;
     }
+
     .arrow-down {
 
         width: 30px;
@@ -892,6 +910,7 @@ body.active {
         max-width: 1140px;
 
     }
+
     .personal__items {
         display: flex;
         justify-content: space-between;

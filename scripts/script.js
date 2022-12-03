@@ -40,8 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (pasted) {
       var pastedText = pasted.getData("Text");
       if (/\D/g.test(pastedText)) {
-        // Attempt to paste non-numeric symbol — remove all non-numeric symbols,
-        // formatting will be in onPhoneInput handler
         input.value = inputNumbersValue;
         return;
       }
@@ -102,20 +100,3 @@ document.addEventListener("DOMContentLoaded", function () {
     phoneInput.addEventListener("paste", onPhonePaste, false);
   }
 });
-// submitBtn.addEventListener("click", (evt) => {
-//   // evt.preventDefault();
-//   for (let i = 0; i < 3; i++) {
-//     form.children[i].value = "";
-//   }
-
-// const name = form.children[0].value;
-// const phone = form.children[1].value;
-// const email = form.children[2].value;
-// fetch(
-//   `https://api.telegram.org/bot5769509280:AAHhyJVNBbQbB97FqlqFf5hXa4hEYt2HPUI/sendMessage?chat_id=-848137333&parse_mode=html&text=Имя:${name} Телефон: ${phone} Email: ${email}`,
-//   {
-//     method: "POST",
-//     // mode: 'no-cors'
-//   }
-// );
-// });

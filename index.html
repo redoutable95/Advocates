@@ -2,11 +2,65 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="cache-control" content="cache" />
+    <meta http-equiv="content-language" content="ru" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Квалифицированная юридическая помощь в г. Грозном ☎ +7 (926) 035 95 95"
+    />
+    <meta
+      name="keywords"
+      content="Юридическая фирма, судебные споры, защита прав потребителей, устная консультация, представительство в суде, представление интересов в правоохранительных органах, сопровождение бизнеса, адвокат, адвокат грозный, адвокат в грозном, адвока в грозный, авдокат чеченская республики"
+    />
     <link rel="stylesheet" href="./styles/reboot.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/style.min.css" />
+    <link rel="icon" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <title>Адвокат в Грозном</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(91065729, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/91065729"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body>
     <header class="header">
@@ -214,18 +268,6 @@
           </div>
         </div>
       </section>
-      <!-- <section class="slogan" id="slogan">
-        <div class="slogan__content container">
-          <h2 class="slogan__title">МЫ ЦЕНИМ СПРАВЕДЛИВОСТЬ И ВАШЕ ВРЕМЯ</h2>
-          <p class="slogan__text">
-            На нашем сайте вы найдете только краткую информацию о портнерах и
-            средствах связи с нами. Мы не перечисляем выигранные дела, не даем
-            себе оценок и не публикуем отзывы третьих лиц о нашей работе — такая
-            реклама прямо запрещена пунктом 1 статьи 17 Кодекса профессиональной
-            этики адвоката.
-          </p>
-        </div>
-      </section> -->
       <section class="services" id="services">
         <div class="container">
           <h2 class="services__title">Услуги:</h2>
@@ -380,19 +422,26 @@
       </section>
 
       <section class="contacts container" id="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__content">
           <p class="contacts__number">+7 (926) 035 95 95</p>
           <p class="contacts__number">+7 (964) 063-88-20</p>
           <p class="contacts__email">m0953535m@gmail.com</p>
         </div>
         <div class="form-wrapper">
-          <form class="form" id="form" method="post" action="/send.php">
-            <input type="text" placeholder="Имя" name="user-name" data-name />
+          <form class="form" id="form" method="POST" action="send.php">
             <input
+              required
+              type="text"
+              placeholder="Имя"
+              name="user-name"
+              data-name
+            />
+            <input
+              required
               type="tel"
               placeholder="Телефон"
               name="user-phone"
-              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
               maxlength="18"
               data-tel
             />
@@ -430,6 +479,6 @@
         </nav>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./scripts/script.min.js "></script>
   </body>
 </html>
